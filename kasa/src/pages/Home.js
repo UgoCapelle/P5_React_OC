@@ -1,20 +1,18 @@
 import React from 'react';
 import Banner from '../components/Banner';
+import Logement from '../components/Logement';
 import logementsData from '../data/logements.json';
+import './Home.scss';
 
 function Home() {
   return (
     <div>
       <Banner />
-      <ul>
+      <div className="gallery">
         {logementsData.map((logement) => (
-          <li key={logement.id}>
-            <h3>{logement.title}</h3>
-            <p>{logement.location}</p>
-            <img src={logement.cover} alt={logement.title} style={{ width: '200px' }} />
-          </li>
+          <Logement key={logement.id} logement={logement} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
