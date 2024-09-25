@@ -1,20 +1,20 @@
 .footer {
-    background-color: #000; // Fond noir
-    color: #fff; // Couleur du texte
-    height: 209px; // Hauteur du footer
+    background-color: #000; 
+    color: #fff; 
+    height: 209px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; // Prendre toute la largeur du navigateur
+    width: 100%; 
   
     .footer-logo {
-      height: 50px; // Ajuste la hauteur du logo si nécessaire
-      margin-bottom: 10px; // Espacement entre le logo et le texte
+      height: 50px; 
+      margin-bottom: 10px; 
     }
   
     .footer-text {
-      font-size: 14px; // Ajuste la taille de la police si nécessaire
-      text-align: center; // Centre le texte
+      font-size: 14px; 
+      text-align: center; 
     }
   }

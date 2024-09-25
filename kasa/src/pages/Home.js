@@ -7,7 +7,7 @@ import './Home.scss';
 function Home() {
   return (
     <div>
-      <Banner />
+      <Banner image={require('../assets/banner1.png')} /> 
       <div className="gallery">
         {logementsData.map((logement) => (
           <Logement key={logement.id} logement={logement} />

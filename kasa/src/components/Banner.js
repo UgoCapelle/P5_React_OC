@@ -1,14 +1,13 @@
 import React from 'react';
 import './Banner.scss';
 
-function Banner() {
+function Banner({ image }) {
   return (
-    <div className="banner">
+    <div className="banner" style={{ backgroundImage: `url(${image})` }}>
       <div className="overlay"></div>
-      <h1 className="banner-text">Chez vous, partout et ailleurs</h1>
+      <div className="banner-text">Chez vous, partout et ailleurs.</div>
     </div>
   );
 }
 
 export default Banner;
-

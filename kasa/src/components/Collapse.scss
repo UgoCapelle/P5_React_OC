@@ -1,0 +1,28 @@
+.collapse {
+  border-radius: 8px; 
+  margin: 10px auto; 
+  max-width: 1023px; 
+  overflow: hidden; 
+
+  .collapse-header {
+      background-color: #FF6060; 
+      color: white;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 10px 20px;
+      cursor: pointer;
+
+      h2 {
+          margin: 0; 
+      }
+  }
+
+  .collapse-content {
+      padding: 15px;
+      background-color: #f9f9f9; 
+      border: none; 
+      text-align: left; 
+  }
+}
+
