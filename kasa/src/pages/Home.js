@@ -1,11 +1,11 @@
 import React from 'react';
+import Banner from '../components/Banner';
 import logementsData from '../data/logements.json';
 
 function Home() {
   return (
     <div>
-      <h1>Bienvenue sur Kasa</h1>
-      <h2>Liste des logements</h2>
+      <Banner />
       <ul>
         {logementsData.map((logement) => (
           <li key={logement.id}>
