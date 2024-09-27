@@ -1,0 +1,25 @@
+.logement-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    max-width: 1440px;
+    margin: 20px auto;
+  
+    .logement-details {
+      margin-top: 15px;
+  
+      .logement-title {
+        font-size: 24px;
+        color: #FF6060;
+        margin-bottom: 5px;
+        text-align: left;
+      }
+  
+      .logement-location {
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+      }
+    }
+  }
