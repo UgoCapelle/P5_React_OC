@@ -1,20 +1,23 @@
 .footer {
-    background-color: #000; 
-    color: #fff; 
-    height: 209px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%; 
-  
-    .footer-logo {
-      height: 50px; 
-      margin-bottom: 10px; 
-    }
-  
-    .footer-text {
-      font-size: 14px; 
-      text-align: center; 
-    }
-  }
+  background-color: #000;
+  color: #fff;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  max-width: 1600px; 
+  margin: auto; 
+  margin-top: 20px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  text-align: center;
+}

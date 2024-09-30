@@ -1,10 +1,14 @@
-import './App.css';
-import AppRouter from './Router';
+import './App.scss'; 
+import AppRouter from './Router'; 
+import Footer from './components/Footer'; 
 
 function App() {
   return (
     <div className="App">
-      <AppRouter />
+      <div className="content">
+        <AppRouter /> 
+      </div>
+      <Footer /> 
     </div>
   );
 }

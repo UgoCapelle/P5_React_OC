@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Slideshow.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'; 
 
 const Slideshow = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,14 +23,11 @@ const Slideshow = ({ images }) => {
       {images.length > 1 && (
         <>
           <button className="prev-button" onClick={goToPrevious}>
-            &lt;
+            <FontAwesomeIcon icon={faChevronUp} rotation={270} style={{color: "#ffffff",}} />
           </button>
           <button className="next-button" onClick={goToNext}>
-            &gt;
+            <FontAwesomeIcon icon={faChevronUp} rotation={90} style={{color: "#ffffff",}} />
           </button>
-          <div className="slide-counter">
-            {currentIndex + 1} / {images.length}
-          </div>
         </>
       )}
       <img

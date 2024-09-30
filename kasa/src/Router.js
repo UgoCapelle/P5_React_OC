@@ -4,7 +4,6 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import LogementDetail from './pages/LogementPage';
 import Header from './components/Header';
-import Footer from './components/Footer'; 
 
 function AppRouter() {
   return (
@@ -16,7 +15,6 @@ function AppRouter() {
         <Route path="/logement/:id" element={<LogementDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }

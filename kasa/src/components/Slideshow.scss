@@ -1,48 +1,38 @@
 .slideshow {
-    position: relative;
+  position: relative;
+  width: 1480px;  
+  height: 415px;  
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden; 
+
+  .slide-image {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  
-    .slide-image {
-      width: 100%;
-      border-radius: 15px;
-    }
-  
-    .prev-button,
-    .next-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      font-size: 2rem;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 10;
-  
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-    }
-  
-    .prev-button {
-      left: 10px;
-    }
-  
-    .next-button {
-      right: 10px;
-    }
-  
-    .slide-counter {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 5px 10px;
-      border-radius: 5px;
-    }
-  }  
+    height: 100%; 
+    border-radius: 15px;
+    object-fit: cover; 
+  }
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    font-size: 3rem; 
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    background: none; 
+    transition: color 0.3s; 
+  }
+
+  .prev-button {
+    left: 10px;
+  }
+
+  .next-button {
+    right: 10px;
+  }
+}
