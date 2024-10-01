@@ -6,7 +6,7 @@ import banner2 from '../assets/banner2.png';
 
 function About() {
   return (
-    <div>
+    <div className='about-container'>
       <Banner image={banner2} />
       <Collapse title="Fiabilité">
         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>

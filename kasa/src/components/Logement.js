@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import de Link
+import { Link } from 'react-router-dom'; 
 import './Logement.scss'; 
 
 function Logement({ logement }) {
   return (
-    <Link to={`/logement/${logement.id}`} className="logement-link">
-      <div className="logement">
+    <div className="logement">
+      <Link to={`/logement/${logement.id}`} className="logement-link">
         <img src={logement.cover} alt={logement.title} className="logement-image" />
-        <div className="logement-info">
-          <h3 className="logement-title">{logement.title}</h3>
-        </div>
+      </Link>
+      <div className="logement-info">
+        <h3 className="logement-title">{logement.title}</h3>
       </div>
-    </Link>
+    </div>
   );
 }
 

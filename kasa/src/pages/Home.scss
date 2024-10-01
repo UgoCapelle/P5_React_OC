@@ -3,9 +3,19 @@
     flex-wrap: wrap; 
     justify-content: center; 
     background-color: #f0f0f0; 
-    padding: 20px; 
     max-width: 1240px; 
     margin: 50px auto 0; 
     border-radius: 15px; 
     overflow: hidden; 
+}
+
+.home-container {
+    padding: 0 20px 0 20px;
+  }
+
+@media (max-width: 768px) {
+    .gallery {
+        background-color: transparent;
+        margin: 20px auto;
+    }
 }

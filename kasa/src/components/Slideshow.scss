@@ -1,6 +1,7 @@
 .slideshow {
   position: relative;
-  width: 1480px;  
+  width: 100%;  
+  max-width: 1280px;  
   height: 415px;  
   margin: 0 auto;
   text-align: center;
@@ -34,5 +35,17 @@
 
   .next-button {
     right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .slideshow {
+      width: 335px;  
+      height: 255px; 
+    }
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 2rem; 
   }
 }

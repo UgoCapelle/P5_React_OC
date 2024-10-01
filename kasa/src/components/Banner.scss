@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
     .overlay {
       position: absolute;
@@ -25,7 +26,31 @@
     .banner-text {
       position: relative;
       color: #fff;
-      font-size: 32px;
+      font-size: 48px;
       z-index: 1;
+      text-align: center;
+      padding: 0 20px;
     }
+
+    @media (max-width: 768px) {
+      height: 111px;
+      margin: 0 20px;
+      width: calc(100% - 40px);
+
+      .banner-text {
+          font-size: 24px;
+          text-align: left;
+          align-self: flex-start;
+          padding: 10px 16px 0 15px; 
+          width: 100%; 
+          box-sizing: border-box; 
+      }
+  }
+}
+
+.mobile-break {
+  display: none;
+  @media (max-width: 768px) {
+      display: inline;
+  }
 }

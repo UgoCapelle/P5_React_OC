@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className="not-found">
       <div className="error-content">
         <h1>404</h1>
-        <p>Oups! La page que vous demandez n'existe pas.</p>
+        <p>Oups! La page que <br className="mobile-break" /> vous demandez n'existe pas.</p>
         <Link to="/" className="home-link">
           Retourner sur la page d’accueil
         </Link>

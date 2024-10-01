@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import logementsData from '../data/logements.json';
 import Slideshow from '../components/Slideshow';
 import Collapse from '../components/Collapse';
@@ -27,7 +27,7 @@ function LogementPage() {
   const logement = logementsData.find((item) => item.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <Navigate to="/404" />;
   }
 
   return (
