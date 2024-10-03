@@ -52,10 +52,10 @@ function LogementPage() {
         </div>
       </div>
       <div className="logement-collapses">
-        <Collapse title="Description">
+        <Collapse title="Description" className="logement-collapse">
           <p>{logement.description}</p>
         </Collapse>
-        <Collapse title="Équipements">
+        <Collapse title="Équipements" className="logement-collapse">
           <ul>
             {logement.equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>
