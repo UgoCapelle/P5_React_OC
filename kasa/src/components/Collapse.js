@@ -16,7 +16,7 @@ function Collapse({ title, children }) {
         <h2>{title}</h2>
         <FontAwesomeIcon 
           icon={faChevronDown} 
-          className={`collapse-icon ${isOpen ? '' : 'rotate'}`}
+          className={`collapse-icon ${isOpen ? 'rotate' : ''}`}
         />
       </div>
       <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
