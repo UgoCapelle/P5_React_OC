@@ -10,7 +10,7 @@ function Home() {
       <Banner image={require('../assets/banner1.png')} /> 
       <div className="gallery">
         {logementsData.map((logement) => (
-          <Logement key={logement.id} logement={logement} />
+          <Logement key={logement.id} logement={logement} /> // Affichage de chaque logement
         ))}
       </div>
     </div>

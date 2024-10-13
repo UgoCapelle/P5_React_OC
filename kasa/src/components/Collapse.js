@@ -4,7 +4,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './Collapse.scss';
 
 function Collapse({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // État pour gérer l'ouverture/fermeture
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen);

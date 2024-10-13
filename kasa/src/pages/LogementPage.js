@@ -5,6 +5,7 @@ import Slideshow from '../components/Slideshow';
 import Collapse from '../components/Collapse';
 import './LogementPage.scss';
 
+// Composant pour afficher la notation en étoiles
 const RatingStars = ({ rating }) => {
   const totalStars = 5;
   const fullStars = Math.floor(rating);
@@ -23,11 +24,11 @@ const RatingStars = ({ rating }) => {
 };
 
 function LogementPage() {
-  const { id } = useParams();
+  const { id } = useParams(); // Récupération de l'ID du logement
   const logement = logementsData.find((item) => item.id === id);
 
   if (!logement) {
-    return <Navigate to="/404" />;
+    return <Navigate to="/404" />; // Redirection vers la page 404 si le logement n'existe pas
   }
 
   return (
@@ -45,7 +46,7 @@ function LogementPage() {
         </div>
         <div className="owner-details">
           <div className="owner-info">
-            <p className="owner-name">{logement.host.name}</p>
+            <p className="owner-name">{logement.host.name.split(' ')[0]}<br />{logement.host.name.split(' ')[1]}</p>
             <img src={logement.host.picture} alt={logement.host.name} className="owner-photo" />
           </div>
           <RatingStars rating={parseFloat(logement.rating)} />
