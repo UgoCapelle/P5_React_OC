@@ -36,10 +36,23 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1208px) and (min-width: 836px) {
     .logement {
-        width: 335px; 
-        height: 255px; 
-        margin: 15px; 
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
+}
+
+@media (max-width: 835px) and (min-width: 770px) {
+    .logement {
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    .logement {
+        width: 100%;
+        margin: 10px 20px;
     }
 }

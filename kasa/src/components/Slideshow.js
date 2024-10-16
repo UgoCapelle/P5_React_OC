@@ -36,6 +36,9 @@ const Slideshow = ({ images }) => {
         alt={`Slide ${currentIndex + 1}`}
         className="slide-image"
       />
+      <div className="counter">
+        {`${currentIndex + 1} / ${images.length}`}
+      </div>
     </div>
   );
 };
